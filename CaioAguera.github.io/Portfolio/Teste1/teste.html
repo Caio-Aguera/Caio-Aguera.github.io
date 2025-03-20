@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema Comercial com IA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    textarea {
+      width: 100%;
+      max-width: 600px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      max-width: 600px;
+      overflow-x: auto;
+    }
+  </style>
+  <script>
+    async function enviarMensagem() {
+      const prompt = document.getElementById('prompt').value;
+
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt })
+      });
+
+      const data = await response.json();
+      document.getElementById('resposta').innerText = JSON.stringify(data, null, 2);
+    }
+  </script>
+</head>
+<body>
+  <h1>Bem-vindo ao Sistema Comercial com IA</h1>
+  <p>Digite sua mensagem e interaja com a IA:</p>
+  <textarea id="prompt" rows="5" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+  <button onclick="enviarMensagem()">Enviar</button>
+  <h2>Resposta da IA:</h2>
+  <pre id="resposta"></pre>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
